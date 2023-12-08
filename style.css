@@ -1,13 +1,204 @@
-body {
-	color: red;
-	background-color: black;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	gap: 40px;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:wght@400;500;600&family=Playfair+Display:wght@700&family=Raleway:wght@500&family=Roboto:wght@500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 
-p {
-	font-size: 20px;
+body {
+	font-family: 'Comfortaa', sans-serif;
+	font-family: 'Nunito', sans-serif;
+	font-family: 'Playfair Display', serif;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 12px 120px;
+	box-sizing: border-box;
+	gap: 10px;
+	font-size: 22px;
+}
+
+.header__logo {
+	color: var(--font-high-emphasis, #25282b);
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 180%;
+}
+
+.navigation {
+	display: flex;
+	gap: 48px;
+	width: 300px;
+}
+
+.navigation > a {
+	color: var(--font-high-emphasis, #25282b);
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px;
+}
+
+.navigation > a:hover {
+	text-decoration: underline;
+}
+
+main {
+	margin-top: 38px;
+	display: flex;
+	padding: 0 120px;
+	box-sizing: border-box;
+	gap: 88px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.main__description {
+	max-width: 590px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.main__description > h1 {
+	color: #333;
+	font-family: 'Playfair Display', serif;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 130%;
+}
+
+.main__description > p {
+	color: #828282;
+	font-family: 'Nunito', sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+.main__description > button {
+	width: 114px;
+	padding: 8px 24px;
+	text-align: center;
+	border-radius: 8px;
+	background: var(--brand-yellow, #fdc435);
+	font-family: 'Roboto', sans-serif;
+	color: #25282b;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 150%;
+}
+
+.form {
+	margin: 0 auto 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 144px;
+	width: 400px;
+	position: relative;
+	top: 144px;
+}
+
+.form > h1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--font-high-emphasis, #25282b);
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 72px;
+	margin-bottom: 80px;
+}
+
+.form > h1 > div {
+	margin-top: 4px;
+	width: 100px;
+	height: 4px;
+	border-radius: 2px;
+	background: var(--brand-yellow, #fdc435);
+}
+
+.form > button {
+	color: var(--font-high-emphasis, #25282b);
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 150%;
+	padding: 8px 24px;
+	border-radius: 8px;
+	background: var(--brand-yellow, #fdc435);
+	margin-left: auto;
+	margin-bottom: 56px;
+}
+
+.form > span {
+	margin-top: 32px;
+	color: var(--font-medium-emphasis, #828282);
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.form__input {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 24px;
+}
+
+.form__input > label {
+	color: var(--font-high, #25282b);
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin-bottom: 8px;
+}
+
+.form__input > input {
+	width: 400px;
+	height: 40px;
+	border-radius: 8px;
+	border: 1px solid #e8ecf4;
+	background: var(--bg-white, #fff);
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+.form__social {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+footer {
+	width: 100%;
+	height: 344px;
+	background-image: url(footer.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
